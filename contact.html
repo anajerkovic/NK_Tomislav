@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NK Tomislav</title>
+    <link href="style.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+</head>
+<body class="content">
+    <nav>
+        <div class="flex-container blue">
+            <img class="logo" src="./images/crow.png">
+            <a href="./index.html" class="nav-item lato-bold">Home</a>
+            <a href="./about.html" class="nav-item  lato-bold">About</a>
+            <a href="./contact.html" class="nav-item lato-bold">Contact</a>
+            <a href="./teams.html" class="nav-item lato-bold">Teams</a>
+        </div>
+    </nav>
+
+    <section id="form">
+        
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-xl-6 col-sm-12 p-4 m-2">
+                    <img src="./images/crow.png" width="400px">
+                </div>
+                <div class="col-xl-5 col-sm-12 p-4 m-2 light-blue pt-serif-regular rounded">
+                    <h1>Contact Us</h1>
+                    <p>Write us a message and we will get to you as soon as we can!</p>
+                    <form method="POST" name="contact_form" onsubmit="return validateForm()" id="contactForm">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" ><br><br>
+                        
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" ><br><br>
+                        
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="5" cols="30" ></textarea><br><br>
+                        
+                        <button type="submit" class="submit-btn blue">Send</button>
+                    </form>
+                    <div id="error-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="footer" class="blue">
+        <footer >
+            <p class="footer-text lato-regular">&copy; 2024 NK Tomislav. All Rights Reserved.</p>
+        </footer> 
+    </section>
+
+    <script src="index.js" charset="UTF-8"></script>
+</body>
+</html>

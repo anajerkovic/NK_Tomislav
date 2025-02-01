@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NK Tomislav</title>
+    <link href="style.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+</head>
+<body class="content">
+    <nav>
+        <div class="flex-container blue">
+            <img class="logo" src="./images/crow.png">
+            <a href="./index.html" class="nav-item lato-bold">Home</a>
+            <a href="./about.html" class="nav-item  lato-bold">About</a>
+            <a href="./contact.html" class="nav-item lato-bold">Contact</a>
+            <a href="./teams.html" class="nav-item lato-bold">Teams</a>
+        </div>
+    </nav>
+
+    <section id="club-history">
+       <div class="row p-4 mx-5 my-2 justify-content-center">
+            <div class="col-xl-6 col-sm-12 p-3">
+                <img src="./images/2019_kids.jpg" width="500px">
+            </div>
+            <div class="col-xl-6 col-sm-12 p-3"> 
+                <h3>History of the Club</h3>
+                <p class="mt-4 pt-serif-regular">
+                        NK Tomislav Livana was founded on April 1, 2005 by local residents of Livana, Briješće and Osijek's Cvjetno naselje.
+                        It was founded for the purpose of planned and organized development of the football branch in the 
+                        settlements of Livana, Briješće, Osijek's Cvjetno naselje and beyond. The club represents a community-centered approach to 
+                        football, fostering local talent and sportsmanship. In addition to its senior team, NK Tomislav Livana operates a School of 
+                        Football for Kids, a vital initiative aimed at developing young talent and promoting a love for the sport among children.
+                </p>
+            </div>
+       </div> 
+    </section>
+
+    <section id="stats">
+     <div class="flex-container light-blue">
+        <div class="row m-2 text-center justify-content-center">
+            <div class="col-xl-4 col-sm-12 mx-1 p-4 my-2 stats-text blue stat"><p>16 tournaments held</p></div>
+            <div class="col-xl-3 col-sm-12 mx-1 p-4 my-2 stats-text blue stat"><p>100+ teams hosted </p></div>
+            <div class="col-xl-4 col-sm-12 mx-1 p-4 my-2 stats-text blue stat"><p>12 countries attended</p></div>
+        </div>
+     </div>   
+    </section>
+
+    <section id="history" class="lightest-blue">
+        <div class="container py-5">
+            <h2>The History of the Tournament</h2>  
+            <div class="row">
+                <div class="col-xl-6 col-sm-12 p-2 my-4 pt-serif-regular">
+                    <p>The "Milenko Jerković" Memorial Tournament is an annual international football competition organized by NK Tomislav Livana, 
+                        dedicated to honoring the memory of one of its founders - Milenko Jerković. This event focuses on the Under-11 (U-11) age category, providing young 
+                        athletes with the opportunity to compete and showcase their talents on an international stage. The most recent 16th edition took 
+                        place on June 8-9, 2024, at the ŠRC Kralj Tomislav stadium in Livana. The event was well-received, with favorable weather conditions 
+                        contributing to its success
+                        <br><br>
+                        The "Milenko Jerković" Memorial Tournament is more than just a football competition—it is a celebration of youth, talent, and 
+                        the enduring spirit of sportsmanship. By bringing together young players from various countries, the tournament fosters international 
+                        friendships, cultural exchange, and a shared passion for the beautiful game. It serves as a fitting tribute to Milenko Jerković’s memory,
+                         ensuring his legacy lives on through the joy and determination of every young athlete who takes the field.
+                        </p>
+                </div>
+                <div class="col-xl-6 col-sm-12 p-2"><img class="blue" src="./images/2019_teams.jpg" width="500px"></div>
+            </div> 
+        </div>
+        
+    </section>
+
+    <section id="winners">
+        <div class="container py-5 pt-serif-regular text-center">
+            <div  class="winners blue mb-4">
+                <h3>Winners</h3>
+                <p>Take a look at all the winners from past tournaments.</p> 
+            </div>
+           
+            <ul class="winners-list">
+                <li><strong>2009.</strong> NK Čepin</li>
+                <li><strong>2010.</strong> NK Čepin</li>
+                <li><strong>2011.</strong> NK BSK Bijelo Brdo</li>
+                <li><strong>2012.</strong> NK Sloga Ernestinovo</li>
+                <li><strong>2013.</strong> NK Osijek</li>
+                <li><strong>2014.</strong> NK Marsonia Slavonski Brod</li>
+                <li><strong>2015.</strong> FC VIDEOTON Szekesfehervar</li>
+                <li><strong>2016.</strong> GNK Dinamo Zagreb</li>
+                <li><strong>2017.</strong> NK Osijek</li>
+                <li><strong>2018.</strong> GNK Dinamo Zagreb</li>
+                <li><strong>2019.</strong> NK Osijek</li>
+                <li><strong>2020.</strong> NK Osijek</li>
+                <li><strong>2021.</strong> NK Osijek</li>
+                <li><strong>2022.</strong> HNK Hajduk Split</li>
+                <li><strong>2023.</strong> HŠK Zrinjski Mostar</li>
+                <li><strong>2024.</strong> HNK Šibenik</li>
+            </ul>
+        </div>
+        
+    </section>
+
+    <section id="footer" class="blue">
+        <footer >
+            <p class="footer-text lato-regular">&copy; 2024 NK Tomislav. All Rights Reserved.</p>
+        </footer> 
+    </section>
+
+    <script src="index.js" charset="UTF-8"></script>
+</body>
+</html>

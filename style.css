@@ -1,0 +1,368 @@
+body{
+    margin: 0;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    gap: 25px; 
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.logo{
+  margin-right: auto;
+  height: 40px;
+  margin-left: 20px;
+}
+
+.nav-item {
+    text-decoration: none;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(24, 24, 27);
+  }
+
+.nav-item:hover{
+    color: #888888;
+}
+
+
+.grid-container{
+    display: grid;
+    justify-content: end;
+    align-items: start;
+    height: 90vh; 
+    padding: 10px;
+    position: relative; 
+}
+
+#hero{
+  background:linear-gradient(45deg, rgba(0, 0, 0, 0.702), rgba(0, 0, 0, 0.729)),
+   url(./images/cover1.png);
+}
+
+.header{
+    padding: 0.5rem;
+    text-align: right;
+    color: aliceblue;
+}
+
+h1.header-item { 
+    font-size: 5rem;
+    padding: 10px;
+}
+
+h4.header-item {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+
+.countdown{
+    padding: 1rem;
+    text-align: center;
+    height: max-content;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  #countdown div {
+    text-align: center;
+  }
+  
+  #countdown span {
+    font-size: 10rem;
+    color: rgb(30, 43, 60);
+    font-weight: bold;
+    padding: 1rem;
+  }
+
+  @media (max-width:800px) {
+    #countdown span {
+      font-size: 5rem;
+    }
+  }
+  
+  #countdown p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+    padding: 1rem;
+  }
+  
+
+.small-countdown-text{
+    color: rgb(238, 243, 248);
+    font-size: 2rem;
+}
+
+
+.carousel{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.carousel-text{
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    color: rgb(35, 53, 76);
+}
+
+#footer{
+    padding: 0.5rem;
+    text-align: right;
+    bottom: 0;
+}
+
+.footer-text{
+    padding-top: 0.5rem;
+}
+
+.winners{
+  padding: 15px;
+  border-radius: 20px;
+  margin-left: 25px;
+}
+
+.winners h3{
+  font-size: 3rem;
+}
+
+.winners p{
+  font-size: 1rem;
+}
+
+.winners-list{
+  list-style: none;
+  font-size: 2rem;
+}
+
+.winners-list li{
+  background-color: #5c5f64;
+  color: aliceblue;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.stats-text{
+    color: aliceblue;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.feedback-input{
+    width: 300px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.feedback-input:hover{
+    background-color:rgb(243, 247, 253) ;
+}
+
+.form-btn{
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px;
+    color: rgb(16, 37, 54);
+}
+
+.form-btn:hover{
+    background-color: rgb(56, 94, 148);
+    color: aliceblue;
+}
+
+.teams-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.teams-grid-item{
+    height: 300px;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px rgb(135, 162, 181);
+}
+
+@media (max-width:800px) {
+    .teams-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+.stat{
+  border-radius: 20px;
+}
+
+.submit-btn{
+  border-radius: 15px;
+  border: none;
+  padding: 10px 25px;
+}
+
+.submit-btn:hover{
+  background-color: rgb(118, 150, 192);
+}
+
+
+.card-container {
+  width: 100%;
+  display: flex;
+  height: 180px;
+}
+
+.card {
+  width: 100%;
+  perspective: 1000px;
+  cursor:help;
+  border-radius:50% ;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; 
+  transition: transform 0.6s ease-in; 
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg); 
+}
+
+.card-front, .card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+
+.card-front {
+  padding-top: 15px;
+}
+
+.card-back {
+  transform: rotateY(180deg); 
+  padding-top: 30px;
+}
+
+
+
+
+
+/* colors */
+.lightest-blue{
+    background-color: aliceblue;
+}
+
+.light-blue{
+    background-color: rgb(208, 228, 255);
+}
+
+.blue{
+    background-color: rgb(155, 198, 253);
+}
+
+.dark-blue{
+    background-color: rgb(61, 135, 232);
+}
+
+.darkest-blue{
+    background-color: rgb(54, 127, 223);
+}
+
+/* fonts */
+
+.racing-sans-one-regular {
+    font-family: "Racing Sans One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+  .pt-serif-regular {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .pt-serif-bold {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .pt-serif-regular-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .pt-serif-bold-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+
+  
+  .lato-regular {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lato-black {
+    font-family: "Lato", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .lato-regular-italic {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .lato-bold-italic {
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .lato-black-italic {
+    font-family: "Lato", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  #map {
+    max-width: 800px;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
